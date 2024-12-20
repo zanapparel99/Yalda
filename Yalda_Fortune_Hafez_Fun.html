@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فال حافظ یلدایی</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #d32f2f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #b71c1c;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .interpretation {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>یلدا مبارک از طرف زن اپرل!</h1>
+        <p>فال حافظ یلدایی خود را با یک کلیک بگیرید!</p>
+        <a href="#" class="button" onclick="showFortune()">گرفتن فال حافظ</a>
+        <div id="fortune" class="result"></div>
+        <div id="interpretation" class="interpretation"></div>
+    </div>
+
+    <script>
+        function showFortune() {
+            const verses = [
+                "هر آن که جانب اهل وفا نگه دارد<br>خداش در همه حال از بلا نگه دارد",
+                "چو بشنوی سخن اهل دل مگو که خطاست<br>سخن شناس نه‌ای جان من خطا اینجاست",
+                "در این بازار اگر سودی است با درویش خرسند است<br>خدایا منعمم گردان به درویشی و خرسندی",
+                "نفس باد صبا مشک فشان خواهد شد<br>عالم پیر دگرباره جوان خواهد شد",
+                "ما ز یاران چشم یاری داشتیم<br>خود غلط بود آن چه می‌پنداشتیم",
+                "گفت آسان گیر بر خود کارها کز روی طبع<br>سخت می‌گیرد جهان بر مردمان سخت‌کوش",
+                "دوش دیدم که ملایک در میخانه زدند<br>گل آدم بسرشتند و به پیمانه زدند",
+                "به یمن همت حافظ امید هست که باز<br>اری شود نظری بر این گدا افتد"
+            ];
+            const interpretations = [
+                "با دیگران مهربان باش، شاید امشب سهم بیشتری از هندوانه نصیبت شود!",
+                "هر حرفی را نقد نکن، مخصوصاً وقتی صحبت شیرینی یلدا در میان است!",
+                "قناعت کن و از شب یلدا لذت ببر، ولی یادت نره آجیل‌ها رو تموم نکنی!",
+                "همه چیز تغییر می‌کنه؛ شاید امشب تو هم برنده قرعه‌کشی بشی!",
+                "به دیگران اعتماد کن، ولی مراقب پوست پرتقال روی زمین باش!",
+                "زندگی رو سخت نگیر؛ ولی شیرینی کمتری بخور، سلامتی مهم‌تره!",
+                "گاهی لازمه کمی شوخی کنی و به بقیه انرژی بدی، مثل یه هندوانه خندان!",
+                "به آینده امیدوار باش، شاید فردا یه تخفیف خوب برای خرید پیدا کنی!"
+            ];
+            const randomIndex = Math.floor(Math.random() * verses.length);
+            document.getElementById('fortune').innerHTML = verses[randomIndex];
+            document.getElementById('interpretation').innerHTML = interpretations[randomIndex];
+        }
+    </script>
+</body>
+</html>
